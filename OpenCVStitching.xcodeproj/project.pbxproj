@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97E912371D1BCBFA00AEA1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E912361D1BCBFA00AEA1F9 /* AppDelegate.swift */; };
+		97E912391D1BCBFA00AEA1F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E912381D1BCBFA00AEA1F9 /* ViewController.swift */; };
+		97E9123C1D1BCBFA00AEA1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E9123A1D1BCBFA00AEA1F9 /* Main.storyboard */; };
+		97E9123E1D1BCBFA00AEA1F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E9123D1D1BCBFA00AEA1F9 /* Assets.xcassets */; };
+		97E912411D1BCBFA00AEA1F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E9123F1D1BCBFA00AEA1F9 /* LaunchScreen.storyboard */; };
+		97E9124B1D1BD9DF00AEA1F9 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E9124A1D1BD9DF00AEA1F9 /* opencv2.framework */; };
+		97E912501D1BDDE700AEA1F9 /* OpenCVConversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97E9124F1D1BDDE700AEA1F9 /* OpenCVConversion.mm */; };
+		97E912551D1BE04D00AEA1F9 /* StitchingWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97E912531D1BE04D00AEA1F9 /* StitchingWrapper.cpp */; };
+		97E9125B1D1BE15400AEA1F9 /* Stitching.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97E9125A1D1BE15400AEA1F9 /* Stitching.mm */; };
+		97E912611D1BE77100AEA1F9 /* yosemite1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E9125D1D1BE77100AEA1F9 /* yosemite1.jpg */; };
+		97E912621D1BE77100AEA1F9 /* yosemite2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E9125E1D1BE77100AEA1F9 /* yosemite2.jpg */; };
+		97E912631D1BE77100AEA1F9 /* yosemite3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E9125F1D1BE77100AEA1F9 /* yosemite3.jpg */; };
+		97E912641D1BE77100AEA1F9 /* yosemite4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E912601D1BE77100AEA1F9 /* yosemite4.jpg */; };
+		97E912661D1BF34500AEA1F9 /* pano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E912651D1BF34500AEA1F9 /* pano.jpg */; };
+		97E9127B1D1C1EB600AEA1F9 /* DJI_0001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912681D1C1EB600AEA1F9 /* DJI_0001.JPG */; };
+		97E9127C1D1C1EB600AEA1F9 /* DJI_0002.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912691D1C1EB600AEA1F9 /* DJI_0002.JPG */; };
+		97E9127D1D1C1EB600AEA1F9 /* DJI_0003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9126A1D1C1EB600AEA1F9 /* DJI_0003.JPG */; };
+		97E9127E1D1C1EB600AEA1F9 /* DJI_0004.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9126B1D1C1EB600AEA1F9 /* DJI_0004.JPG */; };
+		97E9127F1D1C1EB600AEA1F9 /* DJI_0005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9126C1D1C1EB600AEA1F9 /* DJI_0005.JPG */; };
+		97E912801D1C1EB600AEA1F9 /* DJI_0006.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9126D1D1C1EB600AEA1F9 /* DJI_0006.JPG */; };
+		97E912811D1C1EB600AEA1F9 /* DJI_0007.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9126E1D1C1EB600AEA1F9 /* DJI_0007.JPG */; };
+		97E912821D1C1EB600AEA1F9 /* DJI_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9126F1D1C1EB600AEA1F9 /* DJI_0008.JPG */; };
+		97E912831D1C1EB600AEA1F9 /* DJI_0009.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912701D1C1EB600AEA1F9 /* DJI_0009.JPG */; };
+		97E912841D1C1EB600AEA1F9 /* DJI_0010.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912711D1C1EB600AEA1F9 /* DJI_0010.JPG */; };
+		97E912851D1C1EB600AEA1F9 /* DJI_0011.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912721D1C1EB600AEA1F9 /* DJI_0011.JPG */; };
+		97E912861D1C1EB600AEA1F9 /* DJI_0012.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912731D1C1EB600AEA1F9 /* DJI_0012.JPG */; };
+		97E912871D1C1EB600AEA1F9 /* DJI_0013.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912741D1C1EB600AEA1F9 /* DJI_0013.JPG */; };
+		97E912881D1C1EB600AEA1F9 /* DJI_0014.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912751D1C1EB600AEA1F9 /* DJI_0014.JPG */; };
+		97E912891D1C1EB600AEA1F9 /* DJI_0015.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912761D1C1EB600AEA1F9 /* DJI_0015.JPG */; };
+		97E9128A1D1C1EB600AEA1F9 /* DJI_0016.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912771D1C1EB600AEA1F9 /* DJI_0016.JPG */; };
+		97E9128B1D1C1EB600AEA1F9 /* DJI_0017.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912781D1C1EB600AEA1F9 /* DJI_0017.JPG */; };
+		97E9128C1D1C1EB600AEA1F9 /* DJI_0018.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E912791D1C1EB600AEA1F9 /* DJI_0018.JPG */; };
+		97E9128D1D1C1EB600AEA1F9 /* DJI_0019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 97E9127A1D1C1EB600AEA1F9 /* DJI_0019.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		97E912331D1BCBF900AEA1F9 /* OpenCVStitching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVStitching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E912361D1BCBFA00AEA1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97E912381D1BCBFA00AEA1F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97E9123B1D1BCBFA00AEA1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97E9123D1D1BCBFA00AEA1F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97E912401D1BCBFA00AEA1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97E912421D1BCBFA00AEA1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E9124A1D1BD9DF00AEA1F9 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		97E9124E1D1BDDE700AEA1F9 /* OpenCVStitching-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVStitching-Bridging-Header.h"; sourceTree = "<group>"; };
+		97E9124F1D1BDDE700AEA1F9 /* OpenCVConversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVConversion.mm; sourceTree = "<group>"; };
+		97E912511D1BDDFC00AEA1F9 /* OpenCVConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVConversion.h; sourceTree = "<group>"; };
+		97E912521D1BDFA900AEA1F9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		97E912531D1BE04D00AEA1F9 /* StitchingWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StitchingWrapper.cpp; sourceTree = "<group>"; };
+		97E912541D1BE04D00AEA1F9 /* StitchingWrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StitchingWrapper.hpp; sourceTree = "<group>"; };
+		97E9125A1D1BE15400AEA1F9 /* Stitching.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Stitching.mm; sourceTree = "<group>"; };
+		97E9125C1D1BE15E00AEA1F9 /* Stitching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stitching.h; sourceTree = "<group>"; };
+		97E9125D1D1BE77100AEA1F9 /* yosemite1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yosemite1.jpg; path = "../../../Image Stitching/yosemite/yosemite1.jpg"; sourceTree = "<group>"; };
+		97E9125E1D1BE77100AEA1F9 /* yosemite2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yosemite2.jpg; path = "../../../Image Stitching/yosemite/yosemite2.jpg"; sourceTree = "<group>"; };
+		97E9125F1D1BE77100AEA1F9 /* yosemite3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yosemite3.jpg; path = "../../../Image Stitching/yosemite/yosemite3.jpg"; sourceTree = "<group>"; };
+		97E912601D1BE77100AEA1F9 /* yosemite4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yosemite4.jpg; path = "../../../Image Stitching/yosemite/yosemite4.jpg"; sourceTree = "<group>"; };
+		97E912651D1BF34500AEA1F9 /* pano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pano.jpg; path = "../../../Image Stitching/yosemite/pano.jpg"; sourceTree = "<group>"; };
+		97E912681D1C1EB600AEA1F9 /* DJI_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0001.JPG; path = "../../../Image Stitching/p4/DJI_0001.JPG"; sourceTree = "<group>"; };
+		97E912691D1C1EB600AEA1F9 /* DJI_0002.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0002.JPG; path = "../../../Image Stitching/p4/DJI_0002.JPG"; sourceTree = "<group>"; };
+		97E9126A1D1C1EB600AEA1F9 /* DJI_0003.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0003.JPG; path = "../../../Image Stitching/p4/DJI_0003.JPG"; sourceTree = "<group>"; };
+		97E9126B1D1C1EB600AEA1F9 /* DJI_0004.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0004.JPG; path = "../../../Image Stitching/p4/DJI_0004.JPG"; sourceTree = "<group>"; };
+		97E9126C1D1C1EB600AEA1F9 /* DJI_0005.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0005.JPG; path = "../../../Image Stitching/p4/DJI_0005.JPG"; sourceTree = "<group>"; };
+		97E9126D1D1C1EB600AEA1F9 /* DJI_0006.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0006.JPG; path = "../../../Image Stitching/p4/DJI_0006.JPG"; sourceTree = "<group>"; };
+		97E9126E1D1C1EB600AEA1F9 /* DJI_0007.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0007.JPG; path = "../../../Image Stitching/p4/DJI_0007.JPG"; sourceTree = "<group>"; };
+		97E9126F1D1C1EB600AEA1F9 /* DJI_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0008.JPG; path = "../../../Image Stitching/p4/DJI_0008.JPG"; sourceTree = "<group>"; };
+		97E912701D1C1EB600AEA1F9 /* DJI_0009.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0009.JPG; path = "../../../Image Stitching/p4/DJI_0009.JPG"; sourceTree = "<group>"; };
+		97E912711D1C1EB600AEA1F9 /* DJI_0010.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0010.JPG; path = "../../../Image Stitching/p4/DJI_0010.JPG"; sourceTree = "<group>"; };
+		97E912721D1C1EB600AEA1F9 /* DJI_0011.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0011.JPG; path = "../../../Image Stitching/p4/DJI_0011.JPG"; sourceTree = "<group>"; };
+		97E912731D1C1EB600AEA1F9 /* DJI_0012.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0012.JPG; path = "../../../Image Stitching/p4/DJI_0012.JPG"; sourceTree = "<group>"; };
+		97E912741D1C1EB600AEA1F9 /* DJI_0013.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0013.JPG; path = "../../../Image Stitching/p4/DJI_0013.JPG"; sourceTree = "<group>"; };
+		97E912751D1C1EB600AEA1F9 /* DJI_0014.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0014.JPG; path = "../../../Image Stitching/p4/DJI_0014.JPG"; sourceTree = "<group>"; };
+		97E912761D1C1EB600AEA1F9 /* DJI_0015.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0015.JPG; path = "../../../Image Stitching/p4/DJI_0015.JPG"; sourceTree = "<group>"; };
+		97E912771D1C1EB600AEA1F9 /* DJI_0016.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0016.JPG; path = "../../../Image Stitching/p4/DJI_0016.JPG"; sourceTree = "<group>"; };
+		97E912781D1C1EB600AEA1F9 /* DJI_0017.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0017.JPG; path = "../../../Image Stitching/p4/DJI_0017.JPG"; sourceTree = "<group>"; };
+		97E912791D1C1EB600AEA1F9 /* DJI_0018.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0018.JPG; path = "../../../Image Stitching/p4/DJI_0018.JPG"; sourceTree = "<group>"; };
+		97E9127A1D1C1EB600AEA1F9 /* DJI_0019.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0019.JPG; path = "../../../Image Stitching/p4/DJI_0019.JPG"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97E912301D1BCBF900AEA1F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E9124B1D1BD9DF00AEA1F9 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97E9122A1D1BCBF900AEA1F9 = {
+			isa = PBXGroup;
+			children = (
+				97E9124A1D1BD9DF00AEA1F9 /* opencv2.framework */,
+				97E912351D1BCBFA00AEA1F9 /* OpenCVStitching */,
+				97E912341D1BCBF900AEA1F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97E912341D1BCBF900AEA1F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97E912331D1BCBF900AEA1F9 /* OpenCVStitching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97E912351D1BCBFA00AEA1F9 /* OpenCVStitching */ = {
+			isa = PBXGroup;
+			children = (
+				97E912651D1BF34500AEA1F9 /* pano.jpg */,
+				97E9125D1D1BE77100AEA1F9 /* yosemite1.jpg */,
+				97E9125E1D1BE77100AEA1F9 /* yosemite2.jpg */,
+				97E9125F1D1BE77100AEA1F9 /* yosemite3.jpg */,
+				97E912601D1BE77100AEA1F9 /* yosemite4.jpg */,
+				97E912681D1C1EB600AEA1F9 /* DJI_0001.JPG */,
+				97E912691D1C1EB600AEA1F9 /* DJI_0002.JPG */,
+				97E9126A1D1C1EB600AEA1F9 /* DJI_0003.JPG */,
+				97E9126B1D1C1EB600AEA1F9 /* DJI_0004.JPG */,
+				97E9126C1D1C1EB600AEA1F9 /* DJI_0005.JPG */,
+				97E9126D1D1C1EB600AEA1F9 /* DJI_0006.JPG */,
+				97E9126E1D1C1EB600AEA1F9 /* DJI_0007.JPG */,
+				97E9126F1D1C1EB600AEA1F9 /* DJI_0008.JPG */,
+				97E912701D1C1EB600AEA1F9 /* DJI_0009.JPG */,
+				97E912711D1C1EB600AEA1F9 /* DJI_0010.JPG */,
+				97E912721D1C1EB600AEA1F9 /* DJI_0011.JPG */,
+				97E912731D1C1EB600AEA1F9 /* DJI_0012.JPG */,
+				97E912741D1C1EB600AEA1F9 /* DJI_0013.JPG */,
+				97E912751D1C1EB600AEA1F9 /* DJI_0014.JPG */,
+				97E912761D1C1EB600AEA1F9 /* DJI_0015.JPG */,
+				97E912771D1C1EB600AEA1F9 /* DJI_0016.JPG */,
+				97E912781D1C1EB600AEA1F9 /* DJI_0017.JPG */,
+				97E912791D1C1EB600AEA1F9 /* DJI_0018.JPG */,
+				97E9127A1D1C1EB600AEA1F9 /* DJI_0019.JPG */,
+				97E912521D1BDFA900AEA1F9 /* PrefixHeader.pch */,
+				97E912361D1BCBFA00AEA1F9 /* AppDelegate.swift */,
+				97E912381D1BCBFA00AEA1F9 /* ViewController.swift */,
+				97E9123A1D1BCBFA00AEA1F9 /* Main.storyboard */,
+				97E9123D1D1BCBFA00AEA1F9 /* Assets.xcassets */,
+				97E9123F1D1BCBFA00AEA1F9 /* LaunchScreen.storyboard */,
+				97E912421D1BCBFA00AEA1F9 /* Info.plist */,
+				97E912511D1BDDFC00AEA1F9 /* OpenCVConversion.h */,
+				97E9124F1D1BDDE700AEA1F9 /* OpenCVConversion.mm */,
+				97E912531D1BE04D00AEA1F9 /* StitchingWrapper.cpp */,
+				97E912541D1BE04D00AEA1F9 /* StitchingWrapper.hpp */,
+				97E9125A1D1BE15400AEA1F9 /* Stitching.mm */,
+				97E9125C1D1BE15E00AEA1F9 /* Stitching.h */,
+				97E9124E1D1BDDE700AEA1F9 /* OpenCVStitching-Bridging-Header.h */,
+			);
+			path = OpenCVStitching;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97E912321D1BCBF900AEA1F9 /* OpenCVStitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97E912451D1BCBFA00AEA1F9 /* Build configuration list for PBXNativeTarget "OpenCVStitching" */;
+			buildPhases = (
+				97E9122F1D1BCBF900AEA1F9 /* Sources */,
+				97E912301D1BCBF900AEA1F9 /* Frameworks */,
+				97E912311D1BCBF900AEA1F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVStitching;
+			productName = OpenCVStitching;
+			productReference = 97E912331D1BCBF900AEA1F9 /* OpenCVStitching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97E9122B1D1BCBF900AEA1F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					97E912321D1BCBF900AEA1F9 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = K877M5CQ2L;
+					};
+				};
+			};
+			buildConfigurationList = 97E9122E1D1BCBF900AEA1F9 /* Build configuration list for PBXProject "OpenCVStitching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97E9122A1D1BCBF900AEA1F9;
+			productRefGroup = 97E912341D1BCBF900AEA1F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97E912321D1BCBF900AEA1F9 /* OpenCVStitching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97E912311D1BCBF900AEA1F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E912851D1C1EB600AEA1F9 /* DJI_0011.JPG in Resources */,
+				97E9128B1D1C1EB600AEA1F9 /* DJI_0017.JPG in Resources */,
+				97E912611D1BE77100AEA1F9 /* yosemite1.jpg in Resources */,
+				97E9127C1D1C1EB600AEA1F9 /* DJI_0002.JPG in Resources */,
+				97E912641D1BE77100AEA1F9 /* yosemite4.jpg in Resources */,
+				97E912621D1BE77100AEA1F9 /* yosemite2.jpg in Resources */,
+				97E912631D1BE77100AEA1F9 /* yosemite3.jpg in Resources */,
+				97E912881D1C1EB600AEA1F9 /* DJI_0014.JPG in Resources */,
+				97E912801D1C1EB600AEA1F9 /* DJI_0006.JPG in Resources */,
+				97E9128A1D1C1EB600AEA1F9 /* DJI_0016.JPG in Resources */,
+				97E9127E1D1C1EB600AEA1F9 /* DJI_0004.JPG in Resources */,
+				97E912411D1BCBFA00AEA1F9 /* LaunchScreen.storyboard in Resources */,
+				97E912841D1C1EB600AEA1F9 /* DJI_0010.JPG in Resources */,
+				97E912831D1C1EB600AEA1F9 /* DJI_0009.JPG in Resources */,
+				97E912871D1C1EB600AEA1F9 /* DJI_0013.JPG in Resources */,
+				97E912661D1BF34500AEA1F9 /* pano.jpg in Resources */,
+				97E912821D1C1EB600AEA1F9 /* DJI_0008.JPG in Resources */,
+				97E9128D1D1C1EB600AEA1F9 /* DJI_0019.JPG in Resources */,
+				97E9123E1D1BCBFA00AEA1F9 /* Assets.xcassets in Resources */,
+				97E9127F1D1C1EB600AEA1F9 /* DJI_0005.JPG in Resources */,
+				97E912811D1C1EB600AEA1F9 /* DJI_0007.JPG in Resources */,
+				97E912861D1C1EB600AEA1F9 /* DJI_0012.JPG in Resources */,
+				97E9123C1D1BCBFA00AEA1F9 /* Main.storyboard in Resources */,
+				97E9128C1D1C1EB600AEA1F9 /* DJI_0018.JPG in Resources */,
+				97E912891D1C1EB600AEA1F9 /* DJI_0015.JPG in Resources */,
+				97E9127D1D1C1EB600AEA1F9 /* DJI_0003.JPG in Resources */,
+				97E9127B1D1C1EB600AEA1F9 /* DJI_0001.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97E9122F1D1BCBF900AEA1F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E912501D1BDDE700AEA1F9 /* OpenCVConversion.mm in Sources */,
+				97E912391D1BCBFA00AEA1F9 /* ViewController.swift in Sources */,
+				97E9125B1D1BE15400AEA1F9 /* Stitching.mm in Sources */,
+				97E912371D1BCBFA00AEA1F9 /* AppDelegate.swift in Sources */,
+				97E912551D1BE04D00AEA1F9 /* StitchingWrapper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97E9123A1D1BCBFA00AEA1F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97E9123B1D1BCBFA00AEA1F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97E9123F1D1BCBFA00AEA1F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97E912401D1BCBFA00AEA1F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97E912431D1BCBFA00AEA1F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97E912441D1BCBFA00AEA1F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97E912461D1BCBFA00AEA1F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenCVStitching/PrefixHeader.pch";
+				INFOPLIST_FILE = OpenCVStitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OpenCVStitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVStitching/OpenCVStitching-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97E912471D1BCBFA00AEA1F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OpenCVStitching/PrefixHeader.pch";
+				INFOPLIST_FILE = OpenCVStitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.OpenCVStitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVStitching/OpenCVStitching-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97E9122E1D1BCBF900AEA1F9 /* Build configuration list for PBXProject "OpenCVStitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97E912431D1BCBFA00AEA1F9 /* Debug */,
+				97E912441D1BCBFA00AEA1F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97E912451D1BCBFA00AEA1F9 /* Build configuration list for PBXNativeTarget "OpenCVStitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97E912461D1BCBFA00AEA1F9 /* Debug */,
+				97E912471D1BCBFA00AEA1F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97E9122B1D1BCBF900AEA1F9 /* Project object */;
+}
